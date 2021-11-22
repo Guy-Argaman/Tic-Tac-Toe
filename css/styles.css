@@ -1,0 +1,101 @@
+body {
+    transition: all 1s;
+    text-align: center;
+    font-size: 100px;
+    background-repeat: repeat-y;
+    background-size: 100% 90px;
+    background-image: linear-gradient(95deg, cyan, teal), linear-gradient(to top, cyan 5px, transparent 1px), linear-gradient(to bottom, blue 3px, transparent 1px);
+}
+
+h1 {
+    transition: all 1s;
+    font-size: 100px;
+}
+
+.btn {
+    transition: all 0.5s;
+    background-color: teal;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* .msg {
+    transition: all 1s;
+    color: midnightblue;
+    font-size: 100px;
+    text-align: center;
+    width: 500px;
+    margin: 0px auto;
+    margin-top: -400px;
+    margin-left: 1300px;
+    opacity: 0;
+    text-shadow: 0px 0px 50px rgba(54, 54, 209, 0.418);
+    /* box-shadow: 3px 9px 50px 13px cyan; */
+
+/* } */
+
+.msg {
+    transition: all 1s;
+    margin-left: 1000px;
+    margin-top: -400px;
+    font-size: 80px;
+    color: midnightblue;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px rgb(51, 59, 172), 0 0 30px #070666;
+    }
+}
+
+.opacity {
+    transition: all 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.msg:hover {
+    cursor: default;
+}
+
+.btn:hover {
+    transition: all 0.5s;
+    background-color: rgba(27, 69, 85, 0.726);
+    color: black;
+    cursor: pointer;
+}
+
+h1 span {
+    font-size: 50px;
+}
+
+.game-board {
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+
+.wrapper {
+    display: inline-grid;
+}
+
+.board-cell {
+    transition: all 2s;
+    transform-box: 30px;
+    border: solid;
+    font-size: 100px;
+    text-align: center;
+    border-color: gray;
+    color: black;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+    border-color: black;
+}
